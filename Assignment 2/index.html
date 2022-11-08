@@ -1,0 +1,142 @@
+<html lang = "en">  
+   <head>  
+      <meta charset = "utf-8">  
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">  
+      <link rel = "stylesheet"   
+         href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  
+         integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"   
+         crossorigin = "anonymous">         
+      <title> Employee Registration Form</title>  
+      <style>  
+      body {  
+      color: black;  
+      }  
+      </style>  
+   </head>  
+   <body>  
+<section class="h-100 bg-dark">  
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">  
+      <div class="col">  
+        <div class="card card-registration my-4">  
+          <div class="row g-0">  
+              
+            <div class="col-xl-6">  
+              <div class="card-body p-md-5 text-black">  
+                <h3 class="mb-5 text-uppercase"> Employee registration form </h3>  
+                <form action="dashboard.html" method ="post" >
+                <div class="row">  
+                  <div class="col-md-6 mb-4">  
+                    <div class="form-outline">  
+                      <input type="text" id="firstName" class="form-control form-control-lg" />  
+                      <label class="form-label" for="firstName"> First name </label>  
+                    </div>  
+                  </div>  
+                  <div class="col-md-6 mb-4">  
+                    <div class="form-outline">  
+                      <input type="text" id="lastName" class="form-control form-control-lg" />  
+                      <label class="form-label" for="lastName"> Last name </label>  
+                    </div>  
+                  </div>  
+                </div>  
+                <div class="row">  
+                  
+                  <div class="col-md-12 mb-4">  
+                    <div class="form-outline">  
+                      <input type="text" id="fatherName" class="form-control form-control-lg" />  
+                      <label class="form-label" for="fatherName"> Middle name </label>  
+                    </div>  
+                  </div>  
+                </div>  
+                <div class="form-outline mb-4">  
+                  <input type="text" id="address" class="form-control form-control-lg" />  
+                  <label class="form-label" for="address"> Address </label>  
+                </div>  
+                  <div class="form-outline mb-4">  
+                  <input type="text" id="phnnumber" class="form-control form-control-lg" />  
+                  <label class="form-label" for="phnnumber"> Phone Number </label>  
+                </div>  
+                <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">  
+                  <h6 class="mb-0 me-4"> Gender: </h6>  
+                  <div class="form-check form-check-inline mb-0 me-4" >  
+                    <input  
+                      class="form-check-input"  
+                      type="radio"  
+                      name="namegender"  
+                      id="maleGender"  
+                      value="male"  
+                    />  
+                    <label class="form-check-label" for="maleGender"> Male </label>  
+                  </div>
+                  <div class="form-check form-check-inline mb-0 me-4" >  
+                    <input  
+                      class="form-check-input"  
+                      type="radio"  
+                      name="namegender"  
+                      id="femaleGender"  
+                      value="female"  
+                    />  
+                    <label class="form-check-label" for="femaleGender"> Female </label>  
+                  </div>  
+                    
+                </div>  
+                <div class="row">  
+                  <div class="col-md-6 mb-4">  
+                    <select class="select" id="state">  
+                      <option value="State"> State </option>  
+                      <option value="Panjab"> Panjab </option>  
+                      <option value="Bihar"> Bihar </option>  
+                      <option value="up"> Uttar Pradesh </option> 
+                      <option value="up"> Maharastra </option>  
+                    </select>  
+                  </div>  
+                  <div class="col-md-6 mb-4">  
+                    <select class="select" id="city">  
+                      <option value="City"> City </option>  
+                      <option value="Ludhiana"> Ludhiana </option>  
+                      <option value="Lucknow"> Lucknow </option>  
+                      <option value="Patna"> Patna </option>  
+                      <option value="Patna"> Pune </option>
+                    </select>  
+                  </div>  
+                </div>  
+                <div class="form-outline mb-4">  
+                  <input type="text" id="dob" class="form-control form-control-lg" />  
+                  <label class="form-label" for="dob"> Date of Birth </label>  
+                </div>  
+                <div class="form-outline mb-4">  
+                  <input type="text" id="pinCode" class="form-control form-control-lg" />  
+                  <label class="form-label" for="pinCode"> Pincode </label>  
+                </div>  
+                <div class="form-outline mb-4">  
+                  <input type="text" id="course" class="form-control form-control-lg" />  
+                  <label class="form-label" for="course"> Department</label>  
+                </div>  
+                <div class="form-outline mb-4">  
+                  <input type="text" id="emailid" class="form-control form-control-lg" />  
+                  <label class="form-label" for="emailid"> Co-operate Email ID </label>  
+                </div>  
+                <div class="d-flex justify-content-end pt-3">  
+                  <button type="button" class="btn btn-light btn-lg"> Reset all </button>  
+                  <button type="button" class="btn btn-warning btn-lg ms-2" onclick="passvalue()"> Submit form </button>  
+                </div>
+              </form>  
+              </div>  
+            </div> 
+            <div class="col-xl-6 d-none d-xl-block">  
+              <img  
+                src="https://source.unsplash.com/1600x3200/?office,work"  
+                alt="Sample photo"  
+                class="img-fluid"  
+                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;"  
+              />  
+            </div> 
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+  </div>  
+</section> 
+<script src="index.js"></script> 
+</body>  
+</html>
